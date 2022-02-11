@@ -1,0 +1,132 @@
+.container {
+    width: 50%;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+}
+h1,h2 {
+    text-align: center;
+}
+.ex1 div {
+    text-align: center;
+    background: rgb(191,191,191);
+    padding: 1em;
+    border: 1px solid gray;
+}
+.ex1 img {
+    display: block;
+    height: 200px;
+    margin-bottom: 1em;
+}
+.ex1 div {
+    opacity: 0.5;
+}
+.ex1 div:hover {
+    opacity: 1.0;
+    transform: scale(1.1);
+}
+.ex1 a {
+    color: black;
+}
+.ex2 div {
+    padding: 1em;
+}
+.rtl {
+    direction: rtl;
+}
+.ltr {
+    direction: ltr;
+}
+.ex3 div {
+    width: 100%;
+}
+.align-l {
+    text-align-last: left;
+}
+.align-c {
+    text-align-last: center;
+}
+.align-r {
+    text-align-last: right;
+}
+.bidi {
+    margin: 1em;
+    border: 1px solid lightgray;
+    padding: 1em;
+    text-align: center;
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+.floaty {
+    margin: 1em auto;
+    width: 200px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 1em;
+    background: rgb(191,191,191);
+    box-shadow: 0px 10px 10px black, 0px 20px 10px gray, 0px 40px 10px lightgray;
+}
+.grid {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: fit-content;
+}
+.grid kbd,
+.shortcut kbd {
+    background: lightgray;
+    padding: .2em .4em;
+    border: 1px solid gray;
+}
+.shortcut {
+    text-align: center;
+}
+.samp-code,
+.code-code {
+    border: 1px solid gold;
+    background: black;
+    width: 200px;
+    margin: 0 auto;
+    padding: .5em;
+}
+.samp-code {
+    color: lime;
+}
+.code-code {
+    color: magenta;
+}
+.grid div {
+    width: 32px;
+    height: 32px;
+    margin: 8px;
+}
+:root {
+    --re: #ff0000;
+    --gr: #00ff00;
+    --bl: #0000ff;
+}
+.d0 {background: var(--re);}
+.d1 {background: var(--gr);}
+.d2 {background: var(--bl);}
+.d3 {background: var(--gr);}
+.d4 {background: var(--bl);}
+.d5 {background: var(--re);}
+.d6 {background: var(--bl);}
+.d7 {background: var(--re);}
+.d8 {background: var(--gr);}
+
+.outline {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+    text-align: center;
+    align-self: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 25px;
+    border: 25px solid green;
+    margin: 25px auto;
+    outline: blue solid 25px;
+}
